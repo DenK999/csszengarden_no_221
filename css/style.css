@@ -219,12 +219,12 @@ body div.main div.benefits {
   background: rgba(49, 199, 222, 0.85) url(../images/icon-circles.svg) no-repeat 0% 0%;
   background-size: 100%;
   width: 20%;
-  padding: 300px 0 500px 0;
-  float: none;
+  padding: 440px 0 500px 0;
   position: relative;
   left: 60%;
   right: 20%;
   z-index: 1;
+  margin: 0 20% 0 0;
 }
 
 body div.main div.benefits h3 {
@@ -242,13 +242,11 @@ body div.main div.benefits p {
 body div.main div.requirements {
   clear: both;
   color: #0d2c40;
-  background: transparent url(../images/mid-century-2.jpg) no-repeat 5%;
-  background-size: 653px 640px;
-  min-height: 640px;
+  background: transparent url(../images/mid-century-2.jpg) no-repeat 10% 0;
+  background-size: contain;
   margin: -220px 0 0 0;
   padding-left: 40%;
   position: relative;
-  z-index: 5;
   column-count: 2;
 }
 
@@ -257,18 +255,19 @@ body div.main div.requirements h3 {
   transform-origin: 0 0;
   position: absolute;
   top: 40%;
-  left: 33%;
+  left: 30%;
   font-size: 3.5em;
   height: 10%;
 }
 
 body div.main div.requirements p {
   position: relative;
-  float: left;
+  float: none;
   line-height: 30px;
   font-family: 'Open Sans', sans-serif;
   padding: 0 5% 5%;
-  margin-top: 0;
+  margin: 0;
+  z-index: 5;
 }
 
 body div.main div.requirements p a {
