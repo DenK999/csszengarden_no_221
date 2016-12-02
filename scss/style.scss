@@ -108,20 +108,48 @@
       }
     }
 
+    div.main::before {
+      content: "";
+      background: #f6efe5 url(../images/mid-century-1.jpg) no-repeat 0 0;
+      // background-size: cover;
+      width: 100%;
+      height: 1500px;
+      display: block;
+      margin: 0;
+      padding: 0;
+      display: block;
+      // z-index: -1;
+    }
+
     div.main {
       float: left;
-      background: #f6efe5 url(../images/mid-century-1.jpg) no-repeat top left;
-      background-size: 100%, cover;
       position: relative;
+      z-index: 1;
+
+      // div.explanation::before {
+      //   content: "";
+      //   background: #f6efe5 url(../images/mid-century-1.jpg) no-repeat 0 0;
+      //   // background-size: cover;
+      //   width: 100%;
+      //   height: 500px;
+      //   display: block;
+      //   margin: 0;
+      //   padding: 0;
+      //   display: block;
+      //   // z-index: -1;
+      // }
+
       div.explanation {
         color: #fff;
         background: #0d2c40 url(../images/icon-half.svg) no-repeat 100% 50%;
         background-size: 40%;
-        width: 40%;
+        // width: 40%;
         padding: 50px 0;
         margin: unquote((100 + $preamble_margin) + 'px') 60% unquote((100 + $preamble_margin) + 'px') 0;
         vertical-align: middle;
         position: relative;
+        float: none;
+        z-index: 5;
 
         h3 {
           transform: rotate(270deg);
