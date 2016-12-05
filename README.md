@@ -12,3 +12,4 @@ TODO:
 - fix bugs appearance (position view) in participation and benefits div on Desktop
 - fix bugs appearance (background image) in explanation div on Desktop
 - add media queries for Tablets etc.
+- fix other bugs

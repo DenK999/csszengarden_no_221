@@ -1,16 +1,19 @@
-$preamble_margin: 150;
+$preamble_margin: 150px;
 
 
 @import "reset.scss";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
 
+html {
+  background: #f6efe5;
+}
+
 body {
     font-size: 16px;
     font-family: 'Open Sans Condensed', sans-serif;
-    box-sizing: border-box;
-    background: #c879b2;
-    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
     @media screen and (max-width: 1080px) and (min-width: 681px) {
       background: #f15a30;
     }
@@ -18,8 +21,9 @@ body {
 
     section.intro {
       color: #fff;
+      background: #c879b2;
       margin: 0;
-      min-height: 800px;
+      min-height: 1000px;
       width: 100%;
       @media screen and (max-width: 1080px) and (min-width: 681px) {
         height: 100%;
@@ -132,9 +136,9 @@ body {
 
         p:last-child {
           color: #fff;
-          background: rgba(58,194,216, 0.9);
+          background: rgba(58, 194, 216, 0.9);
           padding: 0 1% 300px;
-          margin: 0 0 unquote('-' + $preamble_margin + 'px') 60%;
+          margin: 0 0 -1 * $preamble_margin 60%;
           width: 18%;
           float: none;
           position: relative;
@@ -176,31 +180,36 @@ body {
     // }
 
     div.main {
-      position: absolute;
+      clear: both;
+      position: relative;
+      // top: auto;
       background: #f6efe5 url(../images/mid-century-1.jpg) no-repeat 0 0;
       background-size: 100% 60%, cover;
       // height: 100%;
       height: auto;
+      padding: 10px 0 0 0;
 
       div.explanation {
         color: #fff;
         background: #0d2c40 url(../images/icon-half.svg) no-repeat 100% 50%;
         background-size: 40%;
-        height: 40%;
-        // padding: 50px 0;
-        margin: auto 0;
+        // height: 40%;
+        padding: 3% 0;
+        margin: 0 60% 0 0;
         vertical-align: middle;
-        // position: relative;
+        position: relative;
         float: none;
         z-index: 5;
         width: 40%;
-        // top: 0%;
+
 
         h3 {
           transform: rotate(270deg);
-          transform-origin: 120px 100px;
+          transform-origin: 0 0;
           font-size: 1.5em;
-          height: 0;
+          position: absolute;
+          top: 55%;
+          left: 2%;
         }
 
         p {
@@ -215,7 +224,7 @@ body {
         div.explanation {
           width: 66.66%;
           padding: 76px 0;
-          margin: unquote((50 + $preamble_margin) + 'px') 33.34% unquote((50 + $preamble_margin) + 'px') 0;
+          margin: (50px + $preamble_margin) 33.34% (50px + $preamble_margin) 0;
         }
       }
 
@@ -389,49 +398,38 @@ body {
               background: #f15a30;
             }
 
+            &::before {
+              font-size: 5em;
+              font-weight: bold;
+            }
+
             &:nth-child(1) {
               padding: 30em 0 5em 1%;
               &::before {
                 content: "1";
-                font-size: 5em;
-                font-weight: bold;
               }
             }
 
             &:nth-child(2)::before {
               content: "2";
-              font-size: 5em;
-              font-weight: bold;
             }
             &:nth-child(3)::before {
               content: "3";
-              font-size: 5em;
-              font-weight: bold;
             }
             &:nth-child(4)::before {
               content: "4";
-              font-size: 5em;
-              font-weight: bold;
             }
             &:nth-child(5)::before {
               content: "5";
-              font-size: 5em;
-              font-weight: bold;
             }
             &:nth-child(6)::before {
               content: "6";
-              font-size: 5em;
-              font-weight: bold;
             }
             &:nth-child(7)::before {
               content: "7";
-              font-size: 5em;
-              font-weight: bold;
             }
             &:nth-child(8)::before {
               content: "8";
-              font-size: 5em;
-              font-weight: bold;
             }
 
             &:nth-child(1), &:nth-child(5) {
