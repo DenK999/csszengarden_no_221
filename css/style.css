@@ -73,7 +73,7 @@ body {
 
 section.intro {
   color: #fff;
-  background: #F15B31;
+  background: #C879B2;
   margin: 0;
   min-height: 1000px;
   width: 100%;
@@ -307,7 +307,7 @@ div.main div.explanation h3 {
   transform-origin: 0 0;
   font-size: 1.5em;
   position: absolute;
-  top: 55%;
+  top: 270px;
   left: 2%;
 }
 
@@ -322,8 +322,11 @@ div.main div.explanation p {
 @media screen and (max-width: 1080px) and (min-width: 681px) {
   div.main div.explanation {
     width: 66.66%;
-    padding: 76px 0;
     margin: 200px 33.34% 200px 0;
+  }
+  div.main div.explanation p {
+    margin: 0 25% 0 80px;
+    padding: 10px 0 10px;
   }
 }
 
@@ -338,9 +341,13 @@ div.main div.explanation p {
     margin: 0;
     background: #0d2c40;
   }
-  div.main div.explanation h3, div.main div.explanation p {
+  div.main div.explanation h3 {
     transform: none;
     position: static;
+    margin: 0;
+    padding: 13px;
+  }
+  div.main div.explanation p {
     margin: 0;
     padding: 13px;
   }
@@ -682,6 +689,7 @@ aside div.wrapper div.design-archives, aside div.wrapper div.zen-resources {
   clear: left;
   background: #31c5da;
   width: 20%;
+  margin: 0 20% 0 60%;
   position: relative;
 }
 

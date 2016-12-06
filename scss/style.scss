@@ -30,7 +30,7 @@ body {
 
     section.intro {
       color: #fff;
-      background: #F15B31;
+      background: #C879B2;
       margin: 0;
       min-height: 1000px;
       width: 100%;
@@ -43,7 +43,6 @@ body {
         font-weight: bold;
         @media screen and (max-width: 1080px) {
           width: 100%;
-          // height: 100%;
         }
 
         h1 {
@@ -74,7 +73,6 @@ body {
             margin: 0 0 0 33.33%;
             padding: 50px 0 400px 2%;
             background-size: 50%;
-            // background-position: left bottom;
           }
           @media screen and (max-width: 680px) {
             font-size: 2em;
@@ -91,7 +89,6 @@ body {
         float: left;
         background: transparent url(../images/icons-3-pack.svg) no-repeat 0% 100%;
         background-size: 100%;
-        // padding: 235px 0 0 2.5%;
         @media screen and (max-width: 1080px) {
           width: 65%;
           height: 460px;
@@ -243,7 +240,7 @@ body {
           transform-origin: 0 0;
           font-size: 1.5em;
           position: absolute;
-          top: 55%;
+          top: 270px;
           left: 2%;
         }
 
@@ -258,8 +255,11 @@ body {
       @media screen and (max-width: 1080px) and (min-width: 681px) {
         div.explanation {
           width: 66.66%;
-          padding: 76px 0;
           margin: (50px + $preamble_margin) 33.34% (50px + $preamble_margin) 0;
+          p {
+            margin: 0 25% 0 80px;
+            padding: 10px 0 10px;
+          }
         }
       }
       @media screen and (max-width: 680px) {
@@ -270,9 +270,13 @@ body {
           padding: 0;
           margin: 0;
           background: #0d2c40;
-          h3, p {
+          h3 {
             transform: none;
             position: static;
+            margin: 0;
+            padding: 13px;
+          }
+          p {
             margin: 0;
             padding: 13px;
           }
@@ -449,8 +453,6 @@ body {
         div.requirements {
           padding: 0;
           margin: 0;
-          // float: left;
-          // width: 100%;
 
           @include multi_column(1, 0);
           h3 {
@@ -574,8 +576,7 @@ body {
           clear: left;
           background: #31c5da;
           width: 20%;
-          // margin: 0 20% 0 60%;
-          // padding: 10em 0 15em 0;
+          margin: 0 20% 0 60%;
           position: relative;
 
           h3 {
