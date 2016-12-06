@@ -77,12 +77,16 @@ section.intro {
   margin: 0;
   min-height: 1000px;
   width: 100%;
+  transition-property: background;
+  transition-duration: 1.5s;
 }
 
 @media screen and (max-width: 1080px) {
   section.intro {
     height: 100%;
     background: #F15B31;
+    transition-property: background;
+    transition-duration: 1.5s;
   }
 }
 
@@ -145,6 +149,8 @@ section.intro div.summary {
   float: left;
   background: transparent url("../images/icons-3-pack.svg") no-repeat 0 100%;
   background-size: 100%;
+  transition-property: all;
+  transition-duration: 1s;
 }
 
 @media screen and (max-width: 1080px) {
@@ -154,6 +160,8 @@ section.intro div.summary {
     padding: 20px 0 20px 35%;
     background-color: #c879b2;
     line-height: 1.5em;
+    transition-property: width;
+    transition-duration: 1.5s;
   }
 }
 
@@ -162,6 +170,8 @@ section.intro div.summary {
     width: 90%;
     height: 340px;
     padding: 20px 5%;
+    transition-property: width;
+    transition-duration: 1.5s;
   }
 }
 
@@ -773,8 +783,8 @@ aside div.wrapper div.zen-resources h3 {
 @media screen and (max-width: 700px) {
   aside div.wrapper div.design-selection h3 {
     float: left;
-    width: 96%;
-    padding: 50px 0 20px 20px;
+    width: 95%;
+    padding: 50px 0 20px 5%;
   }
   aside div.wrapper div.design-selection nav ul li,
   aside div.wrapper div.design-selection nav ul li:nth-child(1) {

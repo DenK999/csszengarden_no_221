@@ -35,9 +35,13 @@ section.intro {
     margin: 0;
     min-height: 1000px;
     width: 100%;
+    transition-property:background;
+    transition-duration:1.5s;
     @media screen and (max-width: $tablet) {
         height: 100%;
         background: #F15B31;
+        transition-property:background;
+        transition-duration:1.5s;
     }
 
     header {
@@ -91,17 +95,23 @@ section.intro {
         float: left;
         background: transparent url("../images/icons-3-pack.svg") no-repeat 0 100%;
         background-size: 100%;
+        transition-property:all;
+        transition-duration:1s;
         @media screen and (max-width: $tablet) {
             width: 65%;
             height: 460px;
             padding: 20px 0 20px 35%;
             background-color: #c879b2;
             line-height: 1.5em;
+            transition-property:width;
+            transition-duration:1.5s;
         }
         @media screen and (max-width: $phone) {
             width: 90%;
             height: 340px;
             padding: 20px 5%;
+            transition-property:width;
+            transition-duration:1.5s;
         }
 
         p:first-child {
@@ -703,8 +713,8 @@ aside {
             div.design-selection {
                 h3 {
                     float: left;
-                    width: 96%;
-                    padding: 50px 0 20px 20px;
+                    width: 95%;
+                    padding: 50px 0 20px 5%;
                 }
 
                 nav ul li,
