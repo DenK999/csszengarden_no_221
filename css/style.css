@@ -324,16 +324,17 @@ div.main div.benefits {
   padding: 450px 0 500px 0;
   z-index: 1;
   margin: -110px -10px 0 60%;
-  float: left;
 }
 
 div.main div.benefits h3 {
   font-size: 2em;
+  padding: 0 0 20px 5px;
 }
 
 div.main div.benefits p {
   line-height: 30px;
   font-family: 'Open Sans', sans-serif;
+  padding: 0 10px;
 }
 
 @media screen and (max-width: 1080px) and (min-width: 681px) {
@@ -355,7 +356,7 @@ div.main div.benefits p {
 div.main div.requirements::before {
   content: "";
   margin: 0 0 0 -120%;
-  padding: 0;
+  padding: 0 0 -10px 0;
   width: 120%;
   height: 680px;
   background: transparent url(../images/mid-century-2.jpg) no-repeat 0px;
@@ -363,6 +364,7 @@ div.main div.requirements::before {
   display: block;
   float: left;
   z-index: 1;
+  overflow: hidden;
 }
 
 div.main div.requirements {
