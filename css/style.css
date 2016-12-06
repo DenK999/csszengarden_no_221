@@ -130,6 +130,13 @@ section.intro header h2 {
   }
 }
 
+@media screen and (max-width: 680px) {
+  section.intro header h2 {
+    font-size: 2em;
+    padding: 30px 0 230px 2%;
+  }
+}
+
 section.intro div.summary {
   font-family: 'Open Sans', sans-serif;
   width: 60%;
@@ -149,6 +156,14 @@ section.intro div.summary {
   }
 }
 
+@media screen and (max-width: 680px) {
+  section.intro div.summary {
+    width: 90%;
+    height: 340px;
+    padding: 20px 5%;
+  }
+}
+
 section.intro div.summary p:first-child {
   padding: 250px 0 0 5%;
 }
@@ -164,6 +179,16 @@ section.intro div.summary p a {
 }
 
 @media screen and (max-width: 1080px) {
+  section.intro div.summary p:first-child {
+    padding: 10px 0;
+  }
+  section.intro div.summary p {
+    padding: 10px 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
   section.intro div.summary p:first-child {
     padding: 10px 0;
   }
@@ -231,6 +256,30 @@ section.intro div.preamble p:last-child {
   }
 }
 
+@media screen and (max-width: 680px) {
+  section.intro div.preamble {
+    padding: 0 0 30px 0;
+  }
+  section.intro div.preamble h3 {
+    margin: 0;
+    padding: 35px 0 25px 2%;
+    width: 62.66%;
+  }
+  section.intro div.preamble p {
+    margin: 0;
+    padding: 5px 2%;
+    width: 96%;
+  }
+  section.intro div.preamble p:last-child {
+    float: left;
+    background: #f6efe5;
+    color: #0d2c45;
+    margin: 0;
+    padding: 5px 2%;
+    width: 96%;
+  }
+}
+
 div.main {
   clear: both;
   position: relative;
@@ -278,6 +327,25 @@ div.main div.explanation p {
   }
 }
 
+@media screen and (max-width: 680px) {
+  div.main {
+    float: left;
+    background: #f6efe5;
+  }
+  div.main div.explanation {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #0d2c40;
+  }
+  div.main div.explanation h3, div.main div.explanation p {
+    transform: none;
+    position: static;
+    margin: 0;
+    padding: 13px;
+  }
+}
+
 div.main div.participation {
   float: left;
   color: #0d2c40;
@@ -317,6 +385,19 @@ div.main div.participation p a {
   }
 }
 
+@media screen and (max-width: 680px) {
+  div.main div.participation {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 0 0;
+    position: static;
+  }
+  div.main div.participation h3, div.main div.participation p {
+    margin: 0;
+    padding: 10px 20px 10px 15px;
+  }
+}
+
 div.main div.benefits {
   color: #0d2c40;
   background: rgba(49, 199, 222, 0.85) url(../images/icon-circles.svg) no-repeat 0% 0%;
@@ -353,6 +434,26 @@ div.main div.benefits p {
   }
 }
 
+@media screen and (max-width: 680px) {
+  div.main div.benefits {
+    background-position: 50% 0%;
+    background-size: 30%;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    padding: 10px 0;
+    float: left;
+  }
+  div.main div.benefits h3 {
+    font-size: 1.5em;
+    padding: 200px 0 20px 5%;
+  }
+  div.main div.benefits p {
+    font-size: 0.9em;
+    padding: 10px 5% 10px 5%;
+  }
+}
+
 div.main div.requirements::before {
   content: "";
   margin: 0 0 0 -120%;
@@ -370,6 +471,12 @@ div.main div.requirements::before {
   div.main div.requirements::before {
     margin: 0 0 0 -60%;
     width: 60%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  div.main div.requirements::before {
+    display: none;
   }
 }
 
@@ -431,6 +538,33 @@ div.main div.requirements p a {
   }
 }
 
+@media screen and (max-width: 680px) {
+  div.main div.requirements {
+    padding: 0;
+    margin: 0;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+  }
+  div.main div.requirements h3 {
+    transform: none;
+    margin: 0;
+    padding: 15px;
+    position: static;
+    font-size: 1.5em;
+  }
+  div.main div.requirements p {
+    font-size: 0.9em;
+    padding: 0 2% 2%;
+  }
+  div.main div.requirements p:last-child {
+    padding: 0 2% 0 2%;
+  }
+}
+
 div.main footer {
   line-height: 30px;
   font-family: 'Open Sans', sans-serif;
@@ -443,6 +577,14 @@ div.main footer {
 div.main footer a {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 680px) {
+  div.main footer {
+    position: static;
+    white-space: normal;
+    padding: 25px 15px;
+  }
 }
 
 aside {
@@ -540,8 +682,6 @@ aside div.wrapper div.design-archives, aside div.wrapper div.zen-resources {
   clear: left;
   background: #31c5da;
   width: 20%;
-  margin: 0 20% 0 60%;
-  padding: 10em 0 15em 0;
   position: relative;
 }
 
@@ -605,5 +745,49 @@ aside div.wrapper div.zen-resources h3 {
   aside div.wrapper div.design-archives, aside div.wrapper div.zen-resources {
     width: 25%;
     margin: 0 25% 0 50%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  aside div.wrapper div.design-selection h3 {
+    float: left;
+    width: 96%;
+    padding: 50px 0 20px 20px;
+  }
+  aside div.wrapper div.design-selection nav ul li, aside div.wrapper div.design-selection nav ul li:nth-child(1) {
+    width: 100%;
+    margin: 0;
+    padding: 100px 0 30px 0;
+  }
+  aside div.wrapper div.design-selection nav ul li::before, aside div.wrapper div.design-selection nav ul li:nth-child(1)::before {
+    font-size: 2em;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: -20px;
+    left: 20px;
+  }
+  aside div.wrapper div.design-selection nav ul li:nth-child(2), aside div.wrapper div.design-selection nav ul li:nth-child(3), aside div.wrapper div.design-selection nav ul li:nth-child(4), aside div.wrapper div.design-selection nav ul li:nth-child(1):nth-child(2), aside div.wrapper div.design-selection nav ul li:nth-child(1):nth-child(3), aside div.wrapper div.design-selection nav ul li:nth-child(1):nth-child(4) {
+    margin-top: 0;
+  }
+  aside div.wrapper div.design-selection nav ul li a, aside div.wrapper div.design-selection nav ul li:nth-child(1) a {
+    display: inline-block;
+  }
+  aside div.wrapper div.design-archives, aside div.wrapper div.zen-resources {
+    width: 100%;
+    padding: 100px 0 50px 0;
+    background-position: 50% 100%;
+    background-size: 35%;
+  }
+  aside div.wrapper div.design-archives h3, aside div.wrapper div.zen-resources h3 {
+    transform: none;
+    position: static;
+    padding: 0 0 40px 2%;
+  }
+  aside div.wrapper div.design-archives li, aside div.wrapper div.zen-resources li {
+    padding: 0 0 20px 2%;
+  }
+  aside div.wrapper div.zen-resources {
+    padding: 0px 0 200px 0;
   }
 }
