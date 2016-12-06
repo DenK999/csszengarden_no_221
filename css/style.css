@@ -82,6 +82,7 @@ section.intro {
 @media screen and (max-width: 1080px) {
   section.intro {
     height: 100%;
+    background: #F15B31;
   }
 }
 
@@ -109,10 +110,10 @@ section.intro header h2 {
   width: 50%;
   height: 800px;
   margin: 0 0 0 50%;
-  padding: 250px 0 0 0;
+  padding: 250px 0 0;
   font-size: 2.5em;
   vertical-align: middle;
-  background: #0d2c40 url(../images/icon-star.svg) no-repeat left bottom;
+  background: #0d2c40 url("../images/icon-star.svg") no-repeat left bottom;
   background-size: 100%;
   background-origin: border-box;
   box-sizing: border-box;
@@ -130,7 +131,7 @@ section.intro header h2 {
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
   section.intro header h2 {
     font-size: 2em;
     padding: 30px 0 230px 2%;
@@ -142,7 +143,7 @@ section.intro div.summary {
   width: 60%;
   height: 800px;
   float: left;
-  background: transparent url(../images/icons-3-pack.svg) no-repeat 0% 100%;
+  background: transparent url("../images/icons-3-pack.svg") no-repeat 0 100%;
   background-size: 100%;
 }
 
@@ -156,7 +157,7 @@ section.intro div.summary {
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
   section.intro div.summary {
     width: 90%;
     height: 340px;
@@ -188,7 +189,7 @@ section.intro div.summary p a {
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
   section.intro div.summary p:first-child {
     padding: 10px 0;
   }
@@ -208,7 +209,8 @@ section.intro div.preamble {
   color: #fff;
 }
 
-section.intro div.preamble h3, section.intro div.preamble p {
+section.intro div.preamble h3,
+section.intro div.preamble p {
   float: left;
   color: #0d2c45;
 }
@@ -256,9 +258,9 @@ section.intro div.preamble p:last-child {
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
   section.intro div.preamble {
-    padding: 0 0 30px 0;
+    padding: 0 0 30px;
   }
   section.intro div.preamble h3 {
     margin: 0;
@@ -283,15 +285,15 @@ section.intro div.preamble p:last-child {
 div.main {
   clear: both;
   position: relative;
-  background: #f6efe5 url(../images/mid-century-1.jpg) no-repeat 0 0;
+  background: #f6efe5 url("../images/mid-century-1.jpg") no-repeat 0 0;
   background-size: 100% 40%, cover;
   height: auto;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0;
 }
 
 div.main div.explanation {
   color: #fff;
-  background: #0d2c40 url(../images/icon-half.svg) no-repeat 100% 50%;
+  background: #0d2c40 url("../images/icon-half.svg") no-repeat 100% 50%;
   background-size: 40%;
   padding: 3% 0;
   margin: 15% 60% 0 0;
@@ -316,21 +318,21 @@ div.main div.explanation p {
   font-size: 0.9em;
   line-height: 25px;
   margin: 0 25% 0 80px;
-  padding: 10px 0 10px;
+  padding: 10px 0;
 }
 
-@media screen and (max-width: 1080px) and (min-width: 681px) {
+@media screen and (max-width: 1080px) and (min-width: 701px) {
   div.main div.explanation {
     width: 66.66%;
     margin: 200px 33.34% 200px 0;
   }
   div.main div.explanation p {
     margin: 0 25% 0 80px;
-    padding: 10px 0 10px;
+    padding: 10px 0;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
   div.main {
     float: left;
     background: #f6efe5;
@@ -381,25 +383,26 @@ div.main div.participation p a {
   padding-bottom: 2px;
 }
 
-@media screen and (max-width: 1080px) and (min-width: 681px) {
+@media screen and (max-width: 1080px) and (min-width: 701px) {
   div.main div.participation {
     width: 66.66%;
     padding: 0;
-    margin: 11% 0 0 0;
+    margin: 11% 0 0;
   }
   div.main div.participation h3 {
     padding: 30px 0 30px 15px;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
   div.main div.participation {
     width: 100%;
     padding: 0;
-    margin: 0 0 0 0;
+    margin: 0;
     position: static;
   }
-  div.main div.participation h3, div.main div.participation p {
+  div.main div.participation h3,
+  div.main div.participation p {
     margin: 0;
     padding: 10px 20px 10px 15px;
   }
@@ -407,10 +410,10 @@ div.main div.participation p a {
 
 div.main div.benefits {
   color: #0d2c40;
-  background: rgba(49, 199, 222, 0.85) url(../images/icon-circles.svg) no-repeat 0% 0%;
+  background: rgba(49, 199, 222, 0.85) url("../images/icon-circles.svg") no-repeat 0 0;
   background-size: 100%;
   width: 20%;
-  padding: 450px 0 500px 0;
+  padding: 450px 0 500px;
   z-index: 1;
   margin: -110px -10px 0 60%;
 }
@@ -426,7 +429,7 @@ div.main div.benefits p {
   padding: 0 10px;
 }
 
-@media screen and (max-width: 1080px) and (min-width: 681px) {
+@media screen and (max-width: 1080px) and (min-width: 701px) {
   div.main div.benefits {
     width: 33.34%;
     z-index: 1;
@@ -437,13 +440,13 @@ div.main div.benefits p {
     padding: 0 0 20px 5%;
   }
   div.main div.benefits p {
-    padding: 10px 5% 10px 5%;
+    padding: 10px 5%;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
   div.main div.benefits {
-    background-position: 50% 0%;
+    background-position: 50% 0;
     background-size: 30%;
     width: 100%;
     z-index: 1;
@@ -457,7 +460,7 @@ div.main div.benefits p {
   }
   div.main div.benefits p {
     font-size: 0.9em;
-    padding: 10px 5% 10px 5%;
+    padding: 10px 5%;
   }
 }
 
@@ -466,7 +469,7 @@ div.main div.requirements::before {
   margin: 0 0 0 -120%;
   width: 120%;
   height: 800px;
-  background: transparent url(../images/mid-century-2.jpg) no-repeat 0px;
+  background: transparent url("../images/mid-century-2.jpg") no-repeat 0;
   background-size: cover;
   display: block;
   float: left;
@@ -474,14 +477,14 @@ div.main div.requirements::before {
   overflow: auto;
 }
 
-@media screen and (max-width: 1080px) and (min-width: 681px) {
+@media screen and (max-width: 1080px) and (min-width: 701px) {
   div.main div.requirements::before {
     margin: 0 0 0 -60%;
     width: 60%;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
   div.main div.requirements::before {
     display: none;
   }
@@ -490,7 +493,7 @@ div.main div.requirements::before {
 div.main div.requirements {
   clear: both;
   color: #0d2c40;
-  margin: -220px 0 0 0;
+  margin: -220px 0 0;
   padding: 0 0 0 40%;
   position: relative;
   z-index: 1;
@@ -527,7 +530,7 @@ div.main div.requirements p a {
   padding-bottom: 2px;
 }
 
-@media screen and (max-width: 1080px) and (min-width: 681px) {
+@media screen and (max-width: 1080px) and (min-width: 701px) {
   div.main div.requirements {
     padding: 0 0 0 25%;
     -webkit-column-count: 1;
@@ -541,11 +544,11 @@ div.main div.requirements p a {
     padding: 0 2% 2%;
   }
   div.main div.requirements p:last-child {
-    padding: 0 2% 0 2%;
+    padding: 0 2%;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
   div.main div.requirements {
     padding: 0;
     margin: 0;
@@ -568,7 +571,7 @@ div.main div.requirements p a {
     padding: 0 2% 2%;
   }
   div.main div.requirements p:last-child {
-    padding: 0 2% 0 2%;
+    padding: 0 2%;
   }
 }
 
@@ -586,7 +589,13 @@ div.main footer a {
   color: black;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1080px) {
+  div.main footer {
+    top: 29%;
+  }
+}
+
+@media screen and (max-width: 700px) {
   div.main footer {
     position: static;
     white-space: normal;
@@ -685,7 +694,8 @@ aside div.wrapper div.design-selection nav ul li a:hover {
   color: #000;
 }
 
-aside div.wrapper div.design-archives, aside div.wrapper div.zen-resources {
+aside div.wrapper div.design-archives,
+aside div.wrapper div.zen-resources {
   clear: left;
   background: #31c5da;
   width: 20%;
@@ -693,7 +703,8 @@ aside div.wrapper div.design-archives, aside div.wrapper div.zen-resources {
   position: relative;
 }
 
-aside div.wrapper div.design-archives h3, aside div.wrapper div.zen-resources h3 {
+aside div.wrapper div.design-archives h3,
+aside div.wrapper div.zen-resources h3 {
   font-size: 1.6em;
   transform: rotate(270deg);
   transform-origin: 10px 0;
@@ -701,13 +712,15 @@ aside div.wrapper div.design-archives h3, aside div.wrapper div.zen-resources h3
   left: -20%;
 }
 
-aside div.wrapper div.design-archives li, aside div.wrapper div.zen-resources li {
+aside div.wrapper div.design-archives li,
+aside div.wrapper div.zen-resources li {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
   padding: 2% 0 2% 5%;
 }
 
-aside div.wrapper div.design-archives li a, aside div.wrapper div.zen-resources li a {
+aside div.wrapper div.design-archives li a,
+aside div.wrapper div.zen-resources li a {
   color: #0d2c40;
   text-decoration: none;
   border-bottom: 1px solid #0d2c40;
@@ -715,7 +728,7 @@ aside div.wrapper div.design-archives li a, aside div.wrapper div.zen-resources 
 }
 
 aside div.wrapper div.design-archives {
-  padding: 10em 0 5em 0;
+  padding: 10em 0 5em;
 }
 
 aside div.wrapper div.design-archives h3 {
@@ -723,16 +736,16 @@ aside div.wrapper div.design-archives h3 {
 }
 
 aside div.wrapper div.zen-resources {
-  background: #31c7de url(../images/icon-circles.svg) no-repeat 0% 100%;
+  background: #31c7de url("../images/icon-circles.svg") no-repeat 0 100%;
   background-size: 100%;
-  padding: 10em 0 25em 0;
+  padding: 10em 0 25em;
 }
 
 aside div.wrapper div.zen-resources h3 {
   top: 40%;
 }
 
-@media screen and (max-width: 1080px) and (min-width: 681px) {
+@media screen and (max-width: 1080px) and (min-width: 701px) {
   aside div.wrapper div.design-selection h3 {
     float: right;
     width: 20%;
@@ -750,24 +763,27 @@ aside div.wrapper div.zen-resources h3 {
   aside div.wrapper div.design-selection nav ul li:nth-child(2), aside div.wrapper div.design-selection nav ul li:nth-child(3), aside div.wrapper div.design-selection nav ul li:nth-child(4) {
     margin-top: 0;
   }
-  aside div.wrapper div.design-archives, aside div.wrapper div.zen-resources {
+  aside div.wrapper div.design-archives,
+  aside div.wrapper div.zen-resources {
     width: 25%;
     margin: 0 25% 0 50%;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
   aside div.wrapper div.design-selection h3 {
     float: left;
     width: 96%;
     padding: 50px 0 20px 20px;
   }
-  aside div.wrapper div.design-selection nav ul li, aside div.wrapper div.design-selection nav ul li:nth-child(1) {
+  aside div.wrapper div.design-selection nav ul li,
+  aside div.wrapper div.design-selection nav ul li:nth-child(1) {
     width: 100%;
     margin: 0;
-    padding: 100px 0 30px 0;
+    padding: 100px 0 30px;
   }
-  aside div.wrapper div.design-selection nav ul li::before, aside div.wrapper div.design-selection nav ul li:nth-child(1)::before {
+  aside div.wrapper div.design-selection nav ul li::before,
+  aside div.wrapper div.design-selection nav ul li:nth-child(1)::before {
     font-size: 2em;
     width: 100%;
     margin: 0;
@@ -775,27 +791,32 @@ aside div.wrapper div.zen-resources h3 {
     top: -20px;
     left: 20px;
   }
-  aside div.wrapper div.design-selection nav ul li:nth-child(2), aside div.wrapper div.design-selection nav ul li:nth-child(3), aside div.wrapper div.design-selection nav ul li:nth-child(4), aside div.wrapper div.design-selection nav ul li:nth-child(1):nth-child(2), aside div.wrapper div.design-selection nav ul li:nth-child(1):nth-child(3), aside div.wrapper div.design-selection nav ul li:nth-child(1):nth-child(4) {
+  aside div.wrapper div.design-selection nav ul li:nth-child(2), aside div.wrapper div.design-selection nav ul li:nth-child(3), aside div.wrapper div.design-selection nav ul li:nth-child(4),
+  aside div.wrapper div.design-selection nav ul li:nth-child(1):nth-child(2),
+  aside div.wrapper div.design-selection nav ul li:nth-child(1):nth-child(3),
+  aside div.wrapper div.design-selection nav ul li:nth-child(1):nth-child(4) {
     margin-top: 0;
   }
-  aside div.wrapper div.design-selection nav ul li a, aside div.wrapper div.design-selection nav ul li:nth-child(1) a {
+  aside div.wrapper div.design-selection nav ul li a,
+  aside div.wrapper div.design-selection nav ul li:nth-child(1) a {
     display: inline-block;
   }
-  aside div.wrapper div.design-archives, aside div.wrapper div.zen-resources {
+  aside div.wrapper div.design-archives,
+  aside div.wrapper div.zen-resources {
     width: 100%;
-    padding: 100px 0 50px 0;
+    padding: 100px 0 20px;
+    margin: 0;
     background-position: 50% 100%;
     background-size: 35%;
   }
-  aside div.wrapper div.design-archives h3, aside div.wrapper div.zen-resources h3 {
+  aside div.wrapper div.design-archives h3,
+  aside div.wrapper div.zen-resources h3 {
     transform: none;
     position: static;
-    padding: 0 0 40px 2%;
+    padding: 0px 0 40px 2%;
   }
-  aside div.wrapper div.design-archives li, aside div.wrapper div.zen-resources li {
+  aside div.wrapper div.design-archives li,
+  aside div.wrapper div.zen-resources li {
     padding: 0 0 20px 2%;
-  }
-  aside div.wrapper div.zen-resources {
-    padding: 0px 0 200px 0;
   }
 }

@@ -1,21 +1,22 @@
 $preamble_margin: 150px;
 
+$tablet: 1080px;
+$phone: 700px;
 
 @mixin multi_column($column, $gap) {
-  -webkit-column-count: $column;
-     -moz-column-count: $column;
-          column-count: $column;
-  -webkit-column-gap: $gap;
-     -moz-column-gap: $gap;
-          column-gap: $gap;
+    -webkit-column-count: $column;
+    -moz-column-count: $column;
+    column-count: $column;
+    -webkit-column-gap: $gap;
+    -moz-column-gap: $gap;
+    column-gap: $gap;
 }
-
 @import "reset.scss";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans');
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
 
 html {
-  background: #f6efe5;
+    background: #f6efe5;
 }
 
 body {
@@ -23,208 +24,218 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
     max-width: 1920px;
     margin: 0 auto;
-    @media screen and (max-width: 1080px) {
-      background: #f15a30;
+    @media screen and (max-width: $tablet) {
+        background: #f15a30;
     }
-  }
+}
 
-    section.intro {
-      color: #fff;
-      background: #C879B2;
-      margin: 0;
-      min-height: 1000px;
-      width: 100%;
-      @media screen and (max-width: 1080px) {
+section.intro {
+    color: #fff;
+    background: #C879B2;
+    margin: 0;
+    min-height: 1000px;
+    width: 100%;
+    @media screen and (max-width: $tablet) {
         height: 100%;
-      }
+        background: #F15B31;
+    }
 
-      header {
+    header {
         width: 40%;
         font-weight: bold;
-        @media screen and (max-width: 1080px) {
-          width: 100%;
+        @media screen and (max-width: $tablet) {
+            width: 100%;
         }
 
         h1 {
-          transform: rotate(270deg);
-          transform-origin: right top 0;
-          position: absolute;
-          top: 40px;
-          left: -80px;
+            transform: rotate(270deg);
+            transform-origin: right top 0;
+            position: absolute;
+            top: 40px;
+            left: -80px;
         }
+
 
         h2 {
-          float: left;
-          width: 50%;
-          height: 800px;
-          margin: 0 0 0 50%;
-          padding: 250px 0 0 0;
-          font-size: 2.5em;
-          vertical-align: middle;
-          background: #0d2c40 url(../images/icon-star.svg) no-repeat left bottom;
-          background-size: 100%;
-          background-origin: border-box;
-          box-sizing: border-box;
-          border-left: 16px solid transparent;
-          border-right: 16px solid transparent;
-          @media screen and (max-width: 1080px){
-            width: 66.67%;
-            height: 100%;
-            margin: 0 0 0 33.33%;
-            padding: 50px 0 400px 2%;
-            background-size: 50%;
-          }
-          @media screen and (max-width: 680px) {
-            font-size: 2em;
-            padding: 30px 0 230px 2%;
-          }
+            float: left;
+            width: 50%;
+            height: 800px;
+            margin: 0 0 0 50%;
+            padding: 250px 0 0;
+            font-size: 2.5em;
+            vertical-align: middle;
+            background: #0d2c40 url("../images/icon-star.svg") no-repeat left bottom;
+            background-size: 100%;
+            background-origin: border-box;
+            box-sizing: border-box;
+            border-left: 16px solid transparent;
+            border-right: 16px solid transparent;
+            @media screen and (max-width: $tablet) {
+                width: 66.67%;
+                height: 100%;
+                margin: 0 0 0 33.33%;
+                padding: 50px 0 400px 2%;
+                background-size: 50%;
+            }
+            @media screen and (max-width: $phone) {
+                font-size: 2em;
+                padding: 30px 0 230px 2%;
+            }
         }
+    }
 
-      }
-
-      div.summary {
+    div.summary {
         font-family: 'Open Sans', sans-serif;
         width: 60%;
         height: 800px;
         float: left;
-        background: transparent url(../images/icons-3-pack.svg) no-repeat 0% 100%;
+        background: transparent url("../images/icons-3-pack.svg") no-repeat 0 100%;
         background-size: 100%;
-        @media screen and (max-width: 1080px) {
-          width: 65%;
-          height: 460px;
-          padding: 20px 0 20px 35%;
-          background-color: #c879b2;
-          line-height: 1.5em;
+        @media screen and (max-width: $tablet) {
+            width: 65%;
+            height: 460px;
+            padding: 20px 0 20px 35%;
+            background-color: #c879b2;
+            line-height: 1.5em;
         }
-        @media screen and (max-width: 680px) {
-          width: 90%;
-          height: 340px;
-          padding: 20px 5%;
+        @media screen and (max-width: $phone) {
+            width: 90%;
+            height: 340px;
+            padding: 20px 5%;
         }
-        p:first-child {
-          padding: 250px 0 0 5%;
-        }
-        p {
-          line-height: 1.5em;
-          width: 61.67%;
-          padding: 15px 0 0 5%;
-        }
-        p a {
-          color: #fff
-        }
-        @media screen and (max-width: 1080px) {
-          p:first-child {
-            padding: 10px 0;
-          }
-          p {
-            padding: 10px 0;
-            width: 100%;
-          }
-        }
-        @media screen and (max-width: 680px) {
-          p:first-child {
-            padding: 10px 0;
-          }
-          p {
-            padding: 10px 0;
-            width: 100%;
-          }
-          p a {
-            color: #fff
-          }
-        }
-      }
 
-      div.preamble {
+        p:first-child {
+            padding: 250px 0 0 5%;
+        }
+
+        p {
+            line-height: 1.5em;
+            width: 61.67%;
+            padding: 15px 0 0 5%;
+        }
+
+        p a {
+            color: #fff;
+        }
+        @media screen and (max-width: $tablet) {
+            p:first-child {
+                padding: 10px 0;
+            }
+
+            p {
+                padding: 10px 0;
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: $phone) {
+            p:first-child {
+                padding: 10px 0;
+            }
+
+            p {
+                padding: 10px 0;
+                width: 100%;
+            }
+
+            p a {
+                color: #fff;
+            }
+        }
+    }
+
+    div.preamble {
         float: left;
         width: 100%;
         background: #f6efe5;
         color: #fff;
-        h3, p {
-          float: left;
-          color: #0d2c45;
+
+        h3,
+        p {
+            float: left;
+            color: #0d2c45;
         }
 
         h3 {
-          margin: 150px 40% 20px 20%;
-          font-size: 1.5em;
-          width: 40%
+            margin: 150px 40% 20px 20%;
+            font-size: 1.5em;
+            width: 40%;
         }
 
         p {
-          margin: 0 1% 20px 20%;
-          font-family: 'Open Sans', sans-serif;
-          font-size: 1.2em;
-          width: 39%
+            margin: 0 1% 20px 20%;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2em;
+            width: 39%;
         }
 
         p:last-child {
-          color: #fff;
-          background: rgba(58, 194, 216, 0.9);
-          padding: 0 1% 300px;
-          margin: 0 0 -1 * $preamble_margin 60%;
-          width: 18%;
-          float: none;
-          position: relative;
-          z-index: 2;
+            color: #fff;
+            background: rgba(58, 194, 216, 0.9);
+            padding: 0 1% 300px;
+            margin: 0 0 -1 * $preamble_margin 60%;
+            width: 18%;
+            float: none;
+            position: relative;
+            z-index: 2;
         }
-        @media screen and (max-width: 1080px) {
-          h3 {
-            margin: 0;
-            padding: 35px 0 25px 2%;
-            width: 62.66%
-          }
+        @media screen and (max-width: $tablet) {
+            h3 {
+                margin: 0;
+                padding: 35px 0 25px 2%;
+                width: 62.66%;
+            }
 
-          p {
-            margin: 0;
-            padding: 5px 2%;
-            width: 62.66%
-          }
+            p {
+                margin: 0;
+                padding: 5px 2%;
+                width: 62.66%;
+            }
 
-          p:last-child {
-            background: rgba(240,91,50, 0.9);
-            margin: 0 0 -110px 66.66%;
-            padding: 80px 0 200px 2%;
-            width: 31.34%;
-          }
+            p:last-child {
+                background: rgba(240,91,50, 0.9);
+                margin: 0 0 -110px 66.66%;
+                padding: 80px 0 200px 2%;
+                width: 31.34%;
+            }
         }
-        @media screen and (max-width: 680px) {
-          padding: 0 0 30px 0;
-          h3 {
-            margin: 0;
-            padding: 35px 0 25px 2%;
-            width: 62.66%
-          }
+        @media screen and (max-width: $phone) {
+            padding: 0 0 30px;
 
-          p {
-            margin: 0;
-            padding: 5px 2%;
-            width: 96%
-          }
+            h3 {
+                margin: 0;
+                padding: 35px 0 25px 2%;
+                width: 62.66%;
+            }
 
-          p:last-child {
-            float: left;
-            background: #f6efe5;
-            color: #0d2c45;
-            margin: 0;
-            padding: 5px 2%;
-            width: 96%
-          }
+            p {
+                margin: 0;
+                padding: 5px 2%;
+                width: 96%;
+            }
+
+            p:last-child {
+                float: left;
+                background: #f6efe5;
+                color: #0d2c45;
+                margin: 0;
+                padding: 5px 2%;
+                width: 96%;
+            }
         }
-      }
     }
+}
 
-    div.main {
-      clear: both;
-      position: relative;
-      background: #f6efe5 url(../images/mid-century-1.jpg) no-repeat 0 0;
-      background-size: 100% 40%, cover;
-      height: auto;
-      padding: 10px 0 0 0;
+div.main {
+    clear: both;
+    position: relative;
+    background: #f6efe5 url("../images/mid-century-1.jpg") no-repeat 0 0;
+    background-size: 100% 40%, cover;
+    height: auto;
+    padding: 10px 0 0;
 
-      div.explanation {
+    div.explanation {
         color: #fff;
-        background: #0d2c40 url(../images/icon-half.svg) no-repeat 100% 50%;
+        background: #0d2c40 url("../images/icon-half.svg") no-repeat 100% 50%;
         background-size: 40%;
         padding: 3% 0;
         margin: 15% 60% 0 0;
@@ -234,56 +245,59 @@ body {
         z-index: 5;
         width: 40%;
 
-
         h3 {
-          transform: rotate(270deg);
-          transform-origin: 0 0;
-          font-size: 1.5em;
-          position: absolute;
-          top: 270px;
-          left: 2%;
+            transform: rotate(270deg);
+            transform-origin: 0 0;
+            font-size: 1.5em;
+            position: absolute;
+            top: 270px;
+            left: 2%;
         }
 
         p {
-          font-family: 'Open Sans', sans-serif;
-          font-size: 0.9em;
-          line-height: 25px;
-          margin: 0 25% 0 80px;
-          padding: 10px 0 10px;
-        }
-      }
-      @media screen and (max-width: 1080px) and (min-width: 681px) {
-        div.explanation {
-          width: 66.66%;
-          margin: (50px + $preamble_margin) 33.34% (50px + $preamble_margin) 0;
-          p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.9em;
+            line-height: 25px;
             margin: 0 25% 0 80px;
-            padding: 10px 0 10px;
-          }
+            padding: 10px 0;
         }
-      }
-      @media screen and (max-width: 680px) {
+    }
+    @media screen and (max-width: $tablet) and (min-width: ($phone + 1px)) {
+        div.explanation {
+            width: 66.66%;
+            margin: (50px + $preamble_margin) 33.34% (50px + $preamble_margin) 0;
+
+            p {
+                margin: 0 25% 0 80px;
+                padding: 10px 0;
+            }
+        }
+    }
+    @media screen and (max-width: $phone) {
         float: left;
         background: #f6efe5;
-        div.explanation {
-          width: 100%;
-          padding: 0;
-          margin: 0;
-          background: #0d2c40;
-          h3 {
-            transform: none;
-            position: static;
-            margin: 0;
-            padding: 13px;
-          }
-          p {
-            margin: 0;
-            padding: 13px;
-          }
-        }
-      }
 
-      div.participation {
+        div.explanation {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background: #0d2c40;
+
+            h3 {
+                transform: none;
+                position: static;
+                margin: 0;
+                padding: 13px;
+            }
+
+            p {
+                margin: 0;
+                padding: 13px;
+            }
+        }
+    }
+
+    div.participation {
         float: left;
         color: #0d2c40;
         background: #f6efe5;
@@ -291,411 +305,453 @@ body {
         padding: 0;
         margin: 10% 0 0 20%;
         position: absolute;
-        h3 {
-          font-size: 2em;
-          padding: 30px 15px;
-        }
-        p {
-          font-family: 'Open Sans', sans-serif;
-          line-height: 30px;
-          padding: 10px 20px 10px 15px;
-          a {
-            color: #0d2c40;
-            text-decoration: none;
-            border-bottom:1px solid #0d2c40;
-            padding-bottom:2px;
-          }
-        }
-      }
-      @media screen and (max-width: 1080px) and (min-width: 681px) {
-        div.participation {
-          width: 66.66%;
-          padding: 0;
-          margin: 11% 0 0 0;
-          h3 {
-            padding: 30px 0 30px 15px;
-          }
-        }
-      }
-      @media screen and (max-width: 680px) {
-        div.participation {
-          width: 100%;
-          padding: 0;
-          margin: 0 0 0 0;
-          position: static;
-          h3,p {
-            margin: 0;
-            padding: 10px 20px 10px 15px;
-          }
-        }
-      }
 
-      div.benefits {
+        h3 {
+            font-size: 2em;
+            padding: 30px 15px;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 30px;
+            padding: 10px 20px 10px 15px;
+
+            a {
+                color: #0d2c40;
+                text-decoration: none;
+                border-bottom: 1px solid #0d2c40;
+                padding-bottom: 2px;
+            }
+        }
+    }
+    @media screen and (max-width: $tablet) and (min-width: ($phone + 1px)) {
+        div.participation {
+            width: 66.66%;
+            padding: 0;
+            margin: 11% 0 0;
+
+            h3 {
+                padding: 30px 0 30px 15px;
+            }
+        }
+    }
+    @media screen and (max-width: $phone) {
+        div.participation {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            position: static;
+
+            h3,
+            p {
+                margin: 0;
+                padding: 10px 20px 10px 15px;
+            }
+        }
+    }
+
+    div.benefits {
         color: #0d2c40;
-        background: rgba(49, 199, 222, 0.85) url(../images/icon-circles.svg) no-repeat 0% 0%;
+        background: rgba(49, 199, 222, 0.85) url("../images/icon-circles.svg") no-repeat 0 0;
         background-size: 100%;
         width: 20%;
-        padding: 450px 0 500px 0;
+        padding: 450px 0 500px;
         z-index: 1;
         margin: -110px -10px 0 60%;
+
         h3 {
-          font-size: 2em;
-          padding: 0 0 20px 5px;
-        }
-        p {
-          line-height: 30px;
-          font-family: 'Open Sans', sans-serif;
-          padding: 0 10px;
-        }
-      }
-      @media screen and (max-width: 1080px) and (min-width: 681px) {
-        div.benefits {
-          width: 33.34%;
-          z-index: 1;
-          margin: -100px 0 0 66.66%;
-
-          h3 {
             font-size: 2em;
-            padding: 0 0 20px 5%;
-          }
-          p {
-            padding: 10px 5% 10px 5%;
-          }
+            padding: 0 0 20px 5px;
         }
-      }
-      @media screen and (max-width: 680px) {
+
+        p {
+            line-height: 30px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0 10px;
+        }
+    }
+    @media screen and (max-width: $tablet) and (min-width: ($phone + 1px)) {
         div.benefits {
-          background-position: 50% 0%;
-          background-size: 30%;
-          width: 100%;
-          z-index: 1;
-          margin: 0;
-          padding: 10px 0;
-          float: left;
+            width: 33.34%;
+            z-index: 1;
+            margin: -100px 0 0 66.66%;
 
-          h3 {
-            font-size: 1.5em;
-            padding: 200px 0 20px 5%;
-          }
-          p {
-            font-size:0.9em;
-            padding: 10px 5% 10px 5%;
-          }
+            h3 {
+                font-size: 2em;
+                padding: 0 0 20px 5%;
+            }
+
+            p {
+                padding: 10px 5%;
+            }
         }
-      }
+    }
+    @media screen and (max-width: $phone) {
+        div.benefits {
+            background-position: 50% 0;
+            background-size: 30%;
+            width: 100%;
+            z-index: 1;
+            margin: 0;
+            padding: 10px 0;
+            float: left;
 
-      div.requirements::before {
+            h3 {
+                font-size: 1.5em;
+                padding: 200px 0 20px 5%;
+            }
+
+            p {
+                font-size: 0.9em;
+                padding: 10px 5%;
+            }
+        }
+    }
+
+    div.requirements::before {
         content: "";
         margin: 0 0 0 -120%;
         width: 120%;
         height: 800px;
-        background: transparent url(../images/mid-century-2.jpg) no-repeat 0px;
+        background: transparent url("../images/mid-century-2.jpg") no-repeat 0;
         background-size: cover;
         display: block;
         float: left;
         z-index: 1;
         overflow: auto;
-        @media screen and (max-width: 1080px) and (min-width: 681px){
-          margin: 0 0 0 -60%;
-          width: 60%;
+        @media screen and (max-width: $tablet) and (min-width: ($phone + 1px)) {
+            margin: 0 0 0 -60%;
+            width: 60%;
         }
-        @media screen and (max-width: 680px) {
-          display: none;
+        @media screen and (max-width: $phone) {
+            display: none;
         }
-      }
+    }
 
-      div.requirements {
+    div.requirements {
         clear: both;
         color: #0d2c40;
-        margin: -220px 0 0 0;
+        margin: -220px 0 0;
         padding: 0 0 0 40%;
         position: relative;
         z-index: 1;
         @include multi_column(2, 0);
 
         h3 {
-          transform: rotate(270deg);
-          transform-origin: 25% 320%;
-          position: absolute;
-          font-size: 3.5em;
-          z-index: 5;
+            transform: rotate(270deg);
+            transform-origin: 25% 320%;
+            position: absolute;
+            font-size: 3.5em;
+            z-index: 5;
         }
 
         p {
-          position:relative;
-          float: none;
-          line-height: 30px;
-          font-family: 'Open Sans', sans-serif;
-          padding: 0 5% 5%;
-          margin: 0;
-          z-index: 5;
-          a {
-            color: #0d2c40;
-            text-decoration: none;
-            border-bottom:1px solid #0d2c40;
-            padding-bottom:2px;
-          }
-        }
-      }
-      @media screen and (max-width: 1080px) and (min-width: 681px) {
-        div.requirements {
-          padding: 0 0 0 25%;
-          @include multi_column(1, 0);
-          p {
-            padding: 0 2% 2%;
-            &:last-child {
-              padding: 0 2% 0 2%;
-            }
-          }
-        }
-      }
-      @media screen and (max-width: 680px) {
-        div.requirements {
-          padding: 0;
-          margin: 0;
-
-          @include multi_column(1, 0);
-          h3 {
-            transform: none;
+            position: relative;
+            float: none;
+            line-height: 30px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0 5% 5%;
             margin: 0;
-            padding: 15px;
-            position: static;
-            font-size: 1.5em;
-          }
-          p {
-            font-size:0.9em;
-            padding: 0 2% 2%;
-            &:last-child {
-              padding: 0 2% 0 2%;
-            }
-          }
-        }
-      }
+            z-index: 5;
 
-      footer {
+            a {
+                color: #0d2c40;
+                text-decoration: none;
+                border-bottom: 1px solid #0d2c40;
+                padding-bottom: 2px;
+            }
+        }
+    }
+    @media screen and (max-width: $tablet) and (min-width: ($phone + 1px)) {
+        div.requirements {
+            padding: 0 0 0 25%;
+            @include multi_column(1, 0);
+
+            p {
+                padding: 0 2% 2%;
+
+                &:last-child {
+                    padding: 0 2%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $phone) {
+        div.requirements {
+            padding: 0;
+            margin: 0;
+            @include multi_column(1, 0);
+
+            h3 {
+                transform: none;
+                margin: 0;
+                padding: 15px;
+                position: static;
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.9em;
+                padding: 0 2% 2%;
+
+                &:last-child {
+                    padding: 0 2%;
+                }
+            }
+        }
+    }
+
+    footer {
         line-height: 30px;
         font-family: 'Open Sans', sans-serif;
         position: absolute;
         top: 32%;
         left: -70px;
         white-space: pre;
+
         a {
-          text-decoration: none;
-          color: black;
+            text-decoration: none;
+            color: black;
         }
-        @media screen and (max-width: 680px) {
-          position: static;
-          white-space: normal;
-          padding: 25px 15px;
+        @media screen and (max-width: $tablet) {
+          top: 29%;
         }
-      }
+        @media screen and (max-width: $phone) {
+            position: static;
+            white-space: normal;
+            padding: 25px 15px;
+        }
     }
+}
 
-    aside {
-      width: 100%;
-      color: #fff;
-      div.wrapper {
+aside {
+    width: 100%;
+    color: #fff;
+
+    div.wrapper {
         background: #c879b2;
+
         div.design-selection {
-
-          h3 {
-            float: left;
-            width: 18%;
-            font-size: 2em;
-            padding: 15em 0 20em 2%;
-          }
-          nav ul li {
-            font-family: 'Open Sans', sans-serif;
-            float: left;
-            width: 19%;
-            padding: 10em 0 5em 1%;
-            &:nth-child(even) {
-              background: #f15a30;
+            h3 {
+                float: left;
+                width: 18%;
+                font-size: 2em;
+                padding: 15em 0 20em 2%;
             }
 
-            &::before {
-              font-size: 5em;
-              font-weight: bold;
-            }
+            nav ul li {
+                font-family: 'Open Sans', sans-serif;
+                float: left;
+                width: 19%;
+                padding: 10em 0 5em 1%;
 
-            &:nth-child(1) {
-              padding: 30em 0 5em 1%;
-              &::before {
-                content: "1";
-              }
-            }
+                &:nth-child(even) {
+                    background: #f15a30;
+                }
 
-            &:nth-child(2)::before {
-              content: "2";
-            }
-            &:nth-child(3)::before {
-              content: "3";
-            }
-            &:nth-child(4)::before {
-              content: "4";
-            }
-            &:nth-child(5)::before {
-              content: "5";
-            }
-            &:nth-child(6)::before {
-              content: "6";
-            }
-            &:nth-child(7)::before {
-              content: "7";
-            }
-            &:nth-child(8)::before {
-              content: "8";
-            }
+                &::before {
+                    font-size: 5em;
+                    font-weight: bold;
+                }
 
-            &:nth-child(1), &:nth-child(5) {
-              background: #0d2c40;
-            }
+                &:nth-child(1) {
+                    padding: 30em 0 5em 1%;
 
-            &:nth-child(3), &:nth-child(7) {
-              background: #31c5da;
-            }
+                    &::before {
+                        content: "1";
+                    }
+                }
 
-            &:nth-child(2), &:nth-child(3), &:nth-child(4) {
-              margin-top: 20em;
-            }
+                &:nth-child(2)::before {
+                    content: "2";
+                }
 
-            a {
-              text-decoration: none;
-              color: #fff;
-              display: block;
-              padding: 1em 0;
+                &:nth-child(3)::before {
+                    content: "3";
+                }
 
-              &:hover {
-                color: #000;
-              }
+                &:nth-child(4)::before {
+                    content: "4";
+                }
+
+                &:nth-child(5)::before {
+                    content: "5";
+                }
+
+                &:nth-child(6)::before {
+                    content: "6";
+                }
+
+                &:nth-child(7)::before {
+                    content: "7";
+                }
+
+                &:nth-child(8)::before {
+                    content: "8";
+                }
+
+                &:nth-child(1),
+                &:nth-child(5) {
+                    background: #0d2c40;
+                }
+
+                &:nth-child(3),
+                &:nth-child(7) {
+                    background: #31c5da;
+                }
+
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    margin-top: 20em;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    display: block;
+                    padding: 1em 0;
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
             }
-          }
         }
 
-        div.design-archives, div.zen-resources {
-          clear: left;
-          background: #31c5da;
-          width: 20%;
-          margin: 0 20% 0 60%;
-          position: relative;
+        div.design-archives,
+        div.zen-resources {
+            clear: left;
+            background: #31c5da;
+            width: 20%;
+            margin: 0 20% 0 60%;
+            position: relative;
 
-          h3 {
-            font-size: 1.6em;
-            transform: rotate(270deg);
-            transform-origin: 10px 0;
-            position: absolute;
-            left: -20%;
-          }
-
-          li {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1.2em;
-            padding: 2% 0 2% 5%;
-            a {
-              color: #0d2c40;
-              text-decoration: none;
-              border-bottom: 1px solid #0d2c40;
-              padding-bottom: 2px;
+            h3 {
+                font-size: 1.6em;
+                transform: rotate(270deg);
+                transform-origin: 10px 0;
+                position: absolute;
+                left: -20%;
             }
-          }
+
+            li {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.2em;
+                padding: 2% 0 2% 5%;
+
+                a {
+                    color: #0d2c40;
+                    text-decoration: none;
+                    border-bottom: 1px solid #0d2c40;
+                    padding-bottom: 2px;
+                }
+            }
         }
 
         div.design-archives {
-          padding: 10em 0 5em 0;
-          h3 {
-            top: 80%;
-          }
+            padding: 10em 0 5em;
+
+            h3 {
+                top: 80%;
+            }
         }
 
         div.zen-resources {
-          background: rgb(49,199,222) url(../images/icon-circles.svg) no-repeat 0% 100%;
-          background-size: 100%;
+            background: rgb(49,199,222) url("../images/icon-circles.svg") no-repeat 0 100%;
+            background-size: 100%;
+            padding: 10em 0 25em;
 
-          padding: 10em 0 25em 0;
-          h3 {
-            top: 40%;
-          }
+            h3 {
+                top: 40%;
+            }
         }
-        @media screen and (max-width: 1080px) and (min-width: 681px) {
-
-                div.design-selection {
-
-                  h3 {
+        @media screen and (max-width: $tablet) and (min-width: ($phone + 1px)) {
+            div.design-selection {
+                h3 {
                     float: right;
                     width: 20%;
                     padding: 250px 0 20px 55%;
                     height: 50px;
+                }
 
-                  }
-                  nav ul li {
+                nav ul li {
                     width: 23%;
                     margin: 0;
                     padding: 100px 0 100px 2%;
 
                     &:nth-child(1) {
-                      padding: 420px 0 100px 2%;
+                        padding: 420px 0 100px 2%;
                     }
-                    &:nth-child(2), &:nth-child(3), &:nth-child(4) {
-                      margin-top: 0;
+
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4) {
+                        margin-top: 0;
                     }
-                  }
                 }
-
-                div.design-archives, div.zen-resources {
-                  width: 25%;
-                  margin: 0 25% 0 50%;
-                }
-        }
-        @media screen and (max-width: 680px) {
-          div.design-selection {
-
-            h3 {
-              float: left;
-              width: 96%;
-              padding: 50px 0 20px 20px;
-
             }
-            nav ul li, nav ul li:nth-child(1) {
-              width: 100%;
-              margin: 0;
-              padding: 100px 0 30px 0;
 
-              &::before {
-                font-size: 2em;
+            div.design-archives,
+            div.zen-resources {
+                width: 25%;
+                margin: 0 25% 0 50%;
+            }
+        }
+        @media screen and (max-width: $phone) {
+
+            div.design-selection {
+                h3 {
+                    float: left;
+                    width: 96%;
+                    padding: 50px 0 20px 20px;
+                }
+
+                nav ul li,
+                nav ul li:nth-child(1) {
+                    width: 100%;
+                    margin: 0;
+                    padding: 100px 0 30px;
+
+                    &::before {
+                        font-size: 2em;
+                        width: 100%;
+                        margin: 0;
+                        position: relative;
+                        top: -20px;
+                        left: 20px;
+                    }
+
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4) {
+                        margin-top: 0;
+                    }
+
+                    a {
+                        display: inline-block;
+                    }
+                }
+            }
+
+            div.design-archives,
+            div.zen-resources {
                 width: 100%;
+                padding: 100px 0 20px;
                 margin: 0;
-                position: relative;
-                top: -20px;
-                left: 20px;
-              }
+                background-position: 50% 100%;
+                background-size: 35%;
 
-              &:nth-child(2), &:nth-child(3), &:nth-child(4) {
-                margin-top: 0;
-              }
-              a {
-                display: inline-block;
-              }
-            }
-          }
+                h3 {
+                    transform: none;
+                    position: static;
+                    padding: 0px 0 40px 2%;
+                }
 
-          div.design-archives, div.zen-resources {
-            width: 100%;
-            padding: 100px 0 50px 0;
-            background-position: 50% 100%;
-            background-size: 35%;
-            h3 {
-              transform: none;
-              position: static;
-              padding: 0 0 40px 2%;
+                li {
+                    padding: 0 0 20px 2%;
+                }
             }
-            li {
-              padding: 0 0 20px 2%;
-            }
-          }
-          div.zen-resources {
-            padding: 0px 0 200px 0;
-          }
         }
-
-      }
-  }
+    }
+}
