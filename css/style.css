@@ -235,7 +235,7 @@ div.main {
   clear: both;
   position: relative;
   background: #f6efe5 url(../images/mid-century-1.jpg) no-repeat 0 0;
-  background-size: 100% 60%, cover;
+  background-size: 100% 40%, cover;
   height: auto;
   padding: 10px 0 0 0;
 }
@@ -245,7 +245,7 @@ div.main div.explanation {
   background: #0d2c40 url(../images/icon-half.svg) no-repeat 100% 50%;
   background-size: 40%;
   padding: 3% 0;
-  margin: 0 60% 0 0;
+  margin: 15% 60% 0 0;
   vertical-align: middle;
   position: relative;
   float: none;
@@ -284,6 +284,8 @@ div.main div.participation {
   background: #f6efe5;
   width: 40%;
   padding: 0;
+  margin: 10% 0 0 20%;
+  position: absolute;
 }
 
 div.main div.participation h3 {
@@ -319,12 +321,10 @@ div.main div.benefits {
   background: rgba(49, 199, 222, 0.85) url(../images/icon-circles.svg) no-repeat 0% 0%;
   background-size: 100%;
   width: 20%;
-  padding: 380px 0 500px 0;
-  position: relative;
-  left: 60%;
-  right: 20%;
+  padding: 450px 0 500px 0;
   z-index: 1;
-  margin: -280px 0 0 0;
+  margin: -110px -10px 0 60%;
+  float: left;
 }
 
 div.main div.benefits h3 {
@@ -371,6 +371,7 @@ div.main div.requirements {
   margin: -220px 0 0 0;
   padding: 0 0 0 40%;
   position: relative;
+  z-index: 1;
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
@@ -421,6 +422,7 @@ div.main footer {
   line-height: 30px;
   font-family: 'Open Sans', sans-serif;
   position: absolute;
+  top: 32%;
   left: -70px;
   white-space: pre;
 }
